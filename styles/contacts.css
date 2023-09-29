@@ -1,0 +1,49 @@
+/* Contacts Section */
+.contacts {
+  background-color: #17A2B8;
+  padding: 60px 0;
+  color: #fff;
+}
+
+.section-title {
+  color: #F4F4F4;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.2rem;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+}
+
+.contact-list i {
+  color: #F4F4F4;
+  margin-right: 10px;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+  color: #17A2B8;
+}
+
+.btn-primary {
+  background-color: #17A2B8;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #128495;
+}
+
+.form-group {
+  margin-bottom: 0.3rem;
+}

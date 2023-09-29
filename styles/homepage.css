@@ -1,1 +1,125 @@
+.hero {
+  background-color: #007acc;
+  color: white;
+  padding: 10rem 0 5rem;
+  text-align: center;
+}
 
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.btn-hero {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-hero:hover {
+  background-color: teal;
+  color: white;
+}
+
+.img-fluid {
+  padding-top: 20px;
+}
+
+.row {
+  align-items: center;
+}
+
+.product-reviews {
+  background-color: #333333;
+  color: white;
+  padding: 3rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.row {
+  align-items: start;
+}
+
+.card {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  margin: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+  object-fit: contain;
+  height: 200px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.review-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.desc {
+  display: flex;
+  align-items: start;
+}
+
+.pros-list, .cons-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 20px;
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  border-color: black;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: teal;
+  color: white;
+}
+
+#news .section-title {
+  font-size: 2rem;
+  color: black;
+}
+
+.card-footer {
+  border: none;
+  background-color: white;
+}
+
+#news-button {
+  margin: 1rem;
+}
+
+#about-title {
+  color: black;
+}
