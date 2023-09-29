@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GadgetInsights</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9107f5c156.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/homepage.css">
+  <link rel="stylesheet" href="styles/contacts.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">GadgetInsights</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+              style="--color: white;">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Hero Section-->
+  <section class="hero">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center">
+        <div class="col-lg-6">
+          <h1 class="hero-title">Discover the Latest in Tech</h1>
+          <p class="hero-subtitle">Stay updated with our in-depth gadget reviews and tech insights.</p>
+          <a href="#" class="btn btn-outline-light btn-hero">Explore Reviews</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="images/hero-gadgets.png" alt="Tech Gadgets" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Product Reviews Section-->
+  <section class="product-reviews">
+    <div class="container-fluid">
+      <h2 class="section-title">Latest Product Reviews</h2>
+      <div class="d-flex flex-row flex-nowrap overflow-auto" id="product-scroller">
+        <div class="card-group">
+          <!--Card 1-->
+          <div class="card">
+            <img src="images/product-1.png" alt="Product 1" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">iPhone 15 Pro Max</h3>
+              <div class="row">
+                <div class="col-md-6 d-none d-lg-block">
+                  <h4 class="review-title">Pros</h4>
+                  <ul class="pros-list">
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Fast, smooth performance
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Excellent cameras
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Long battery life
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Useful Action button
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          USB-C connectivity opens up new features
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Lighter than previous Pro Max
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 d-none d-lg-block">
+                  <h4 class="review-title">Cons</h4>
+                  <ul class="cons-list">
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-xmark" style="color: #ff0000; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Expensive
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-xmark" style="color: #ff0000; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Big
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="btn btn-outline-light align-items-center text-center mt-auto">Read Full Review</a>
+            </div>
+          </div>
+          <!--Card 2-->
+          <div class="card">
+            <img src="images/product-2.avif" alt="Product 1" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Samsung Galaxy S23 Ultra</h3>
+              <div class="row">
+                <div class="col-md-6 d-none d-lg-block">
+                  <h4 class="review-title">Pros</h4>
+                  <ul class="pros-list">
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Large, bright display
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Speedy performance
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Excellent cameras
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          S Pen integration
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Solid battery life
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Durable hardware
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Strong software update commitment
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 d-none d-lg-block">
+                  <h4 class="review-title">Cons</h4>
+                  <ul class="cons-list">
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-xmark" style="color: #ff0000; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Expensive
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-xmark" style="color: #ff0000; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Big, heavy build
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="btn btn-outline-light align-items-center text-center mt-auto">Read Full Review</a>
+            </div>
+          </div>
+          <!--Card 3-->
+          <div class="card">
+            <img src="images/product-3.webp" alt="Product 1" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Samsung Galaxy Z Fold 5</h3>
+              <div class="row">
+                <div class="col-md-6 d-none d-lg-block">
+                  <h4 class="review-title">Pros</h4>
+                  <ul class="pros-list">
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Incredibly versatile
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Excellent productivity software
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Beautiful screens
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-check" style="color: teal; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Slimmer, lighter design than previous generation
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 d-none d-lg-block">
+                  <h4 class="review-title">Cons</h4>
+                  <ul class="cons-list">
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-xmark" style="color: #ff0000; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Pricey
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="desc">
+                        <i class="fa-solid fa-xmark" style="color: #ff0000; padding: 5px 15px 0 0;"></i>
+                        <p>
+                          Odd speaker placement
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="btn btn-outline-light align-items-center text-center mt-auto">Read Full Review</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--News Section-->
+  <section id="news" class="bg-light py-5">
+    <div class="container">
+      <h2 class="section-title text-center">Tech News</h2>
+      <div class="card-group">
+        <!--News Article 1-->
+        <div class="card rounded shadow">
+          <img src="images/news1.jpg" alt="News 1" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title news-title">
+              Don't Want Google to Use Your Website for AI Training? You Can Now Opt Out
+            </h3>
+            <p class="card-text news-description">
+              The company creates a new tool for website publishers that'll tell Google's web crawlers to avoid using
+              their content for AI training.
+            </p>
+          </div>
+          <a id="news-button" href="#" class="btn btn-outline-light align-items-center text-center mt-auto">Read
+            More</a>
+        </div>
+        <!--News Article 2-->
+        <div class="card rounded shadow">
+          <img src="images/news2.jpg" alt="News 2" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title news-title">
+              Twitter Axes Election Misinformation Reporting Tool
+            </h3>
+            <p class="card-text news-description">
+              The Australian branch of Reset.Tech, an Internet digital policy activist group, says Twitter removed an
+              option to report electoral misinformation 'in the last week or two.'
+            </p>
+          </div>
+          <a id="news-button" href="#" class="btn btn-outline-light align-items-center text-center mt-auto">Read
+            More</a>
+        </div>
+        <!--News Article 3-->
+        <div class="card rounded shadow">
+          <img src="images/news3.webp" alt="News 3" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title news-title">
+              Spotify Jam Lets You Add Your Favorite Songs to a Shared Music Queue
+            </h3>
+            <p class="card-text news-description">
+              When you're part of a Jam, you can add songs to the queue and see who added what. If a tune isn't quite
+              working in the Jam, the host can remove it.
+            </p>
+          </div>
+          <a id="news-button" href="#" class="btn btn-outline-light align-items-center text-center mt-auto">Read
+            More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Contacts Section-->
+  <section class="contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="lead">
+            We'd love to hear from you. Contact us using the information below:
+          </p>
+          <ul class="contact-list">
+            <li>
+              <i class="fas fa-envelope"></i> Email: contact@gadgetinsights.com
+            </li>
+            <li>
+              <i class="fas fa-phone"></i> Phone: +63 (923) 456 7890
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Address: 123 Main Street, Dasmarinas City, Cavite, Philippines
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-form">
+            <h3>Contact Form</h3>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--About-->
+  <section id="about" class="bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="about-content">
+            <h2 id="about-title" class="section-title mb-4">Welcome to GadgetInsights</h2>
+            <p class="about-text">
+              <strong>We're GadgetInsights, your tech journey begins here.</strong> Step into the world of innovation
+              and discovery with us. Our mission is to unlock the potential of technology, making it exciting and
+              accessible to all.
+            </p>
+            <p class="about-text">
+              <strong>Mission:</strong> We're on a mission to enlighten and inspire. Our goal is to bridge the gap
+              between technology and people, providing insights, reviews, and knowledge that empower you in the digital
+              age.
+            </p>
+            <p class="about-text">
+              <strong>Vision:</strong> Our vision is to build a vibrant community of tech enthusiasts, where ideas
+              thrive, and creativity knows no bounds. Join us as we explore the endless possibilities of the tech world.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="about-image">
+            <img src="images/logo.jpg" alt="GadgetInsights Office" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
