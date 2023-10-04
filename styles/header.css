@@ -68,3 +68,13 @@
   color: black;
   border: none;
 }
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 25px 2% 25px 2%;
+  }
+
+  .navbar-brand {
+    margin-right: 40px;
+  }
+}

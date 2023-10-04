@@ -16,7 +16,8 @@
   margin-bottom: 30px;
 }
 
-.btn-hero {
+.button0,
+.hero-button {
   background-color: transparent;
   border-color: white;
   color: white;
@@ -25,17 +26,15 @@
   transition: background-color 0.3s ease;
 }
 
-.btn-hero:hover {
+.button0:hover,
+.hero-button:hover {
   background-color: teal;
   color: white;
+  border-color: teal;
 }
 
 .img-fluid {
   padding-top: 20px;
-}
-
-.row {
-  align-items: center;
 }
 
 .product-reviews {
@@ -94,16 +93,17 @@
   margin-left: 20px;
 }
 
-.btn-outline-light {
+.buttons {
   background-color: transparent;
   border-color: black;
   color: black;
   transition: background-color 0.3s ease;
 }
 
-.btn-outline-light:hover {
+.buttons:hover {
   background-color: teal;
   color: white;
+  border-color: teal;
 }
 
 #news .section-title {
@@ -116,10 +116,70 @@
   background-color: white;
 }
 
+.news.card-img-top {
+  height: auto;
+}
+
 #news-button {
   margin: 1rem;
 }
 
 #about-title {
   color: black;
+}
+
+p.card-text {
+  text-align: justify;
+  text-justify: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .hero-button,
+  .buttons {
+    font-size: 0.7rem;
+  }
+
+  .section-title, 
+  #news .section-title {
+    font-size: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+    margin: 10px;
+  }
+  
+  .card-body {
+    padding: 0 0 10px 0;
+  }
+
+  .buttons {
+    margin: 0 15px 0 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero-image {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero {
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  #email.form-control {
+    font-size: 0.8rem;
+  }
 }

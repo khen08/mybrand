@@ -1,6 +1,10 @@
+body {
+  background-color: #17A2B8;
+}
+
 .contacts {
   background-color: #17A2B8;
-  padding: 60px 0;
+  padding: 15rem 0 8rem 0;
   color: #fff;
 }
 
@@ -30,10 +34,6 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form h3 {
-  color: #17A2B8;
-}
-
 .btn-primary {
   background-color: #17A2B8;
   border: none;
@@ -45,4 +45,146 @@
 
 .form-group {
   margin-bottom: 0.3rem;
+}
+
+.social-media {
+  background-color: rgb(33, 37, 41);
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-right: 3.15rem;
+}
+
+.icon-container {
+  width: 100px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.5s;
+  background: rgba(0, 0, 0, 0);
+  color: var(--color);
+  font-size: 2.5rem;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  background: var(--color);
+  color: #050801;
+  box-shadow: 0 0 5px var(--color),
+  0 0 25px var(--color),
+  0 0 50px var(--color),
+  0 0 200px var(--color);
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding: 8rem 0 3rem 0;
+  }
+
+  .social-icons {
+    margin-right: 2.5rem;
+  }
+
+  i {
+    font-size: 30px;
+  }
+
+  .section-title,
+  .desc,
+  .contact-list li,
+  .contact-form h3,
+  .form-control,
+  .btn-primary,
+  .social-media h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .social-media {
+    padding: 1.5rem 0 1.5rem 0;
+  }
+
+  .contacts {
+    padding: 7rem 0 2rem 0;
+  }
+
+  .icon-container {
+    width: 50px;
+    height: 50px;
+    margin-right: 1.5rem;
+  }
+
+  .social-icons {
+    margin-right: 1rem;
+  }
+
+  .social-icon {
+    height: 50px;
+    width: 50px;
+  }
+  
+  i {
+    font-size: 1rem;
+  }
+
+  .section-title,
+  .desc,
+  .contact-list li,
+  .contact-form h3,
+  .form-control,
+  .btn-primary,
+  .social-media h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .social-media {
+    padding: 1rem 0 1rem 0;
+  }
+
+  .icon-container {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+  }
+
+  .social-icons {
+    margin-right: 0.8rem;
+  }
+
+  .social-icon {
+    height: 30px;
+    width: 30px;
+  }
+  
+  i {
+    font-size: 0.9rem;
+  }
+
+  .section-title,
+  .desc,
+  .contact-list li,
+  .contact-form h3,
+  .form-control,
+  .btn-primary,
+  .social-media h3 {
+    font-size: 0.9rem;
+  }
 }
