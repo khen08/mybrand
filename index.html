@@ -22,7 +22,6 @@
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/homepage.css">
-  <link rel="stylesheet" href="styles/contacts.css">
 </head>
 
 <body>
@@ -37,19 +36,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Product Reviews</a>
+              <a class="nav-link" href="#product-reviews">Product Reviews</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contacts.html">Contacts</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
           </ul>
           <form class="d-flex my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
               style="--color: white;">
-            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+            <button class="button0 btn btn-outline-dark my-2 my-sm-0" type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
@@ -64,19 +63,20 @@
         <div class="col-lg-6">
           <h1 class="hero-title">Discover the Latest in Tech</h1>
           <p class="hero-subtitle">Stay updated with our in-depth gadget reviews and tech insights.</p>
-          <a href="#" class="btn btn-outline-light btn-hero">Explore Reviews</a>
+          <div class="button-container">
+            <a href="#product-reviews" class="hero-button btn btn-outline-light btn-hero">Explore Reviews</a>
+          </div>
         </div>
-        <div class="col-lg-6">
+        <div class="hero-image col-lg-6">
           <img src="images/hero-gadgets.png" alt="Tech Gadgets" class="img-fluid">
         </div>
       </div>
     </div>
   </section>
   <!--Product Reviews Section-->
-  <section class="product-reviews">
+  <section class="product-reviews" id="product-reviews">
     <div class="container-fluid">
       <h2 class="section-title">Latest Product Reviews</h2>
-      <div class="d-flex flex-row flex-nowrap overflow-auto" id="product-scroller">
         <div class="card-group">
           <!--Card 1-->
           <div class="card">
@@ -159,7 +159,8 @@
                   </ul>
                 </div>
               </div>
-              <a href="#" class="btn btn-outline-light align-items-center text-center mt-auto">Read Full Review</a>
+              <a href="#product-reviews" class="buttons btn btn-outline-light align-items-center text-center mt-auto">Read Full
+                Review</a>
             </div>
           </div>
           <!--Card 2-->
@@ -251,7 +252,8 @@
                   </ul>
                 </div>
               </div>
-              <a href="#" class="btn btn-outline-light align-items-center text-center mt-auto">Read Full Review</a>
+              <a href="#product-reviews" class="buttons btn btn-outline-light align-items-center text-center mt-auto">Read Full
+                Review</a>
             </div>
           </div>
           <!--Card 3-->
@@ -319,136 +321,93 @@
                   </ul>
                 </div>
               </div>
-              <a href="#" class="btn btn-outline-light align-items-center text-center mt-auto">Read Full Review</a>
+              <a href="#product-reviews" class="buttons btn btn-outline-light align-items-center text-center mt-auto">Read Full
+                Review</a>
             </div>
           </div>
         </div>
-      </div>
     </div>
   </section>
 
   <!--News Section-->
   <section id="news" class="bg-light py-5">
-    <div class="container">
-      <h2 class="section-title text-center">Tech News</h2>
+    <div class="container-fluid">
+      <h2 class="section-title">Tech News</h2>
       <div class="card-group">
         <!--News Article 1-->
         <div class="card rounded shadow">
-          <img src="images/news1.jpg" alt="News 1" class="card-img-top">
+          <img src="images/news1.jpg" alt="News 1" class="news card-img-top">
           <div class="card-body">
             <h3 class="card-title news-title">
               Don't Want Google to Use Your Website for AI Training? You Can Now Opt Out
             </h3>
-            <p class="card-text news-description">
+            <p class="card-text news-description d-none d-lg-block">
               The company creates a new tool for website publishers that'll tell Google's web crawlers to avoid using
               their content for AI training.
             </p>
           </div>
-          <a id="news-button" href="#" class="btn btn-outline-light align-items-center text-center mt-auto">Read
+          <a id="news-button" href="#news" class="buttons btn btn-outline-light align-items-center text-center mt-auto">Read
             More</a>
         </div>
         <!--News Article 2-->
         <div class="card rounded shadow">
-          <img src="images/news2.jpg" alt="News 2" class="card-img-top">
+          <img src="images/news2.jpg" alt="News 2" class="news card-img-top">
           <div class="card-body">
             <h3 class="card-title news-title">
               Twitter Axes Election Misinformation Reporting Tool
             </h3>
-            <p class="card-text news-description">
+            <p class="card-text news-description d-none d-lg-block">
               The Australian branch of Reset.Tech, an Internet digital policy activist group, says Twitter removed an
               option to report electoral misinformation 'in the last week or two.'
             </p>
           </div>
-          <a id="news-button" href="#" class="btn btn-outline-light align-items-center text-center mt-auto">Read
+          <a id="news-button" href="#news" class="buttons btn btn-outline-light align-items-center text-center mt-auto">Read
             More</a>
         </div>
         <!--News Article 3-->
         <div class="card rounded shadow">
-          <img src="images/news3.webp" alt="News 3" class="card-img-top">
+          <img src="images/news3.webp" alt="News 3" class="news card-img-top">
           <div class="card-body">
             <h3 class="card-title news-title">
               Spotify Jam Lets You Add Your Favorite Songs to a Shared Music Queue
             </h3>
-            <p class="card-text news-description">
+            <p class="card-text news-description d-none d-lg-block">
               When you're part of a Jam, you can add songs to the queue and see who added what. If a tune isn't quite
               working in the Jam, the host can remove it.
             </p>
           </div>
-          <a id="news-button" href="#" class="btn btn-outline-light align-items-center text-center mt-auto">Read
+          <a id="news-button" href="#news" class="buttons btn btn-outline-light align-items-center text-center mt-auto">Read
             More</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!--Contacts Section-->
-  <section class="contacts">
+  <!--Newsletter-->
+  <section id="newsletter-signup" class="bg-dark py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h2 class="section-title">Get in Touch</h2>
-          <p class="lead">
-            We'd love to hear from you. Contact us using the information below:
-          </p>
-          <ul class="contact-list">
-            <li>
-              <i class="fas fa-envelope"></i> Email: contact@gadgetinsights.com
-            </li>
-            <li>
-              <i class="fas fa-phone"></i> Phone: +63 (923) 456 7890
-            </li>
-            <li>
-              <i class="fas fa-map-marker-alt"></i> Address: 123 Main Street, Dasmarinas City, Cavite, Philippines
-            </li>
-          </ul>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 text-center text-white">
+          <h2 class="section-title">Subscribe to Our Newsletter</h2>
+          <p>Don't miss out on the latest tech trends, product reviews, and exclusive offers.</p>
         </div>
         <div class="col-lg-6">
-          <div class="contact-form">
-            <h3>Contact Form</h3>
-            <form>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--About-->
-  <section id="about" class="bg-light py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="about-content">
-            <h2 id="about-title" class="section-title mb-4">Welcome to GadgetInsights</h2>
-            <p class="about-text">
-              <strong>We're GadgetInsights, your tech journey begins here.</strong> Step into the world of innovation
-              and discovery with us. Our mission is to unlock the potential of technology, making it exciting and
-              accessible to all.
-            </p>
-            <p class="about-text">
-              <strong>Mission:</strong> We're on a mission to enlighten and inspire. Our goal is to bridge the gap
-              between technology and people, providing insights, reviews, and knowledge that empower you in the digital
-              age.
-            </p>
-            <p class="about-text">
-              <strong>Vision:</strong> Our vision is to build a vibrant community of tech enthusiasts, where ideas
-              thrive, and creativity knows no bounds. Join us as we explore the endless possibilities of the tech world.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="about-image">
-            <img src="images/logo.jpg" alt="GadgetInsights Office" class="img-fluid">
+          <div class="card p-4 shadow">
+            <div class="card-body">
+              <h5 class="card-title text-center mb-4">Join Our Tech Community</h5>
+              <!-- Newsletter Form -->
+              <form action="#" method="post" class="newsletter-form">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="your_email@email.com"
+                    required>
+                </div>
+                <div class="text-center">
+                  <button class="buttons btn btn-primary btn-lg" type="submit">Subscribe Now</button>
+                </div>
+              </form>
+              <!-- End Newsletter Form -->
+            </div>
           </div>
         </div>
       </div>
