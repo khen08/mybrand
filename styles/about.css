@@ -6,6 +6,10 @@ div.about {
   margin-top: 6rem;
 }
 
+.about-section {
+  padding: 0 2rem 0 2rem;
+}
+
 .about-content {
   text-align: justify;
   text-justify: auto;
@@ -82,8 +86,8 @@ div.about {
     padding: 1rem 0 0 0;
   }
 
-  .about-content {
-    padding: 0 1rem 0 1rem;
+  #about-title {
+    margin: 0 1rem 0 1rem;
   }
 
   .icon-container {
@@ -97,46 +101,60 @@ div.about {
     font-size: 2rem;
   }
 
-  @media (max-width: 375px) {
-    .container {
-      padding: 1rem 0 0 0;
-    }
+  #about-title {
+    text-align: start;
+    margin: 0;
+  }
+}
 
-    h2#about-title {
-      text-align: start;
-    }
-
-    .about-content {
-      padding: 0 1rem 0 1rem;
-    }
-
-    .icon-container {
-      width: 50px;
-      margin-right: 2rem;
-    }
-
-    .partner-icon {
-      width: 50px;
-      height: 50px;
-      font-size: 2rem;
-    }
+@media (max-width: 375px) {
+  .container {
+    padding: 1rem 0 0 0;
   }
 
-  @media (max-width: 375px) {
-    .icon-container {
-      width: 30px;
-      margin-right: 2.5rem;
-    }
+  h2#about-title {
+    text-align: start;
+  }
 
-    .partner-icon {
-      width: 30px;
-      height: 30px;
-      font-size: 2rem;
-    }
+  .icon-container {
+    width: 50px;
+    margin-right: 2rem;
+  }
 
-    .img-fluid {
-      width: 300px;
-      height: 300px;
-    }
+  .partner-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+  }
+
+  .img-fluid {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 320px) {
+  .icon-container {
+    width: 30px;
+    margin-right: 2.5rem;
+  }
+
+  .partner-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+  }
+
+  .img-fluid {
+    width: 250px;
+    height: 250px;
+  }
+
+  #about-title {
+    margin: 0.5rem 0 0 0;
+  }
+
+  .about-text {
+    font-size: 0.8rem;
   }
 }
